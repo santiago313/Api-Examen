@@ -7,7 +7,7 @@ export const getAllCarros = async(req, res)=>{
         const autos = await Carro.find({},{__v:0})
         if(autos.length === 0){
             return res.status(404).json({
-                msg: 'No se encontraron autos'
+                msg: 'No se encontraron Autos'
             });
         }
 
